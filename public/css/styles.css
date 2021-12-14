@@ -144,8 +144,6 @@ article {
 
 footer {
     padding: 10px;
-    border-top: solid;
-    border-bottom: solid;
     display: flex;
     flex-wrap: nowrap;
     background-color: white;
@@ -160,26 +158,32 @@ footer {
 
 .fa-credit-card {
     font-size: 40px;
+    color: #2ab2ec;
+
 }
 
 .fa-truck {
     font-size: 40px;
+    color: #2ab2ec;
+
 }
 
 .fa-user-shield {
     font-size: 40px;
+    color: #2ab2ec;
+
 }
 
 .fa-credit-card:hover {
-    color: #2ab2ec;
+    color: #03264C;
 }
 
 .fa-truck:hover {
-    color: #2ab2ec;
+    color: #03264C;
 }
 
 .fa-user-shield:hover {
-    color: #2ab2ec;
+    color: #03264C;
 }
 
 
