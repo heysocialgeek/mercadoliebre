@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('/css/normalize.css');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e1e1e1;
+}
+
+/*general*/
+
+.logito {
+    width: 100%;
+    text-align: center;
+}
+
+.imgArticle {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+.main-header {
+    font-family: "Roboto";
+    font-size: 12px;
+    background-color: #EAC926;
+    padding: 4px;
+
+}
+
+main {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+}
+
+h2 {
+    font-size: 24px;
+
+}
+
+.discount {
+    font-size: 16px;
+    color: green;
+
+}
+
+.fa-shipping-fast {
+    display: block;
+    color: #39b54a;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    align-self: flex-end;
+}
+
+.description {
+    font-size: 16px;
+    opacity: 0;
+}
+
+article:hover p {
+    opacity: 1;
+}
+
+article:hover {
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 0, 0.2);
+}
+
+.btn:hover {
+    background: #0022AA;
+    color: white;
+}
+
+article:hover div i {
+    transform: rotatez(-90deg)
+}
+
+
+.price {
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.headertext {
+    text-align: center;
+
+}
+
+.burger-menu {
+    color: white;
+    background: #03264C;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 15px solid #ebebeb;
+    padding: 15px;
+    text-align: left;
+    background-color: white;
+}
+
+.flexbol {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.flexbol2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headertext {
+    padding: 10px;
+}
+
+footer {
+    padding: 10px;
+    border-top: solid;
+    border-bottom: solid;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: white;
+}
+
+.footer {
+    text-align: center;
+    width: auto;
+    padding: 10px;
+}
+
+
+.fa-credit-card {
+    font-size: 40px;
+}
+
+.fa-truck {
+    font-size: 40px;
+}
+
+.fa-user-shield {
+    font-size: 40px;
+}
+
+.fa-credit-card:hover {
+    color: #2ab2ec;
+}
+
+.fa-truck:hover {
+    color: #2ab2ec;
+}
+
+.fa-user-shield:hover {
+    color: #2ab2ec;
+}
+
+
+
+h4 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*mobile*/
+
+@media (max-width: 480px) {
+
+    .header-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .headertext {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .imgArticle {
+        display: block;
+        margin: auto;
+        width: 60%;
+    }
+
+}
+
+
+/*ipad*/
+
+@media (min-width: 481px) {
+
+    article {
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 5);
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .flex article {
+        width: 49%;
+    
+    }
+
+    .navi {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    li {
+        padding: 10px;
+    }
+
+    .header-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+}
+
+/*desktop*/
+
+@media (min-width: 1279px) {
+
+    .header-container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 20%;
+        align-items: flex-start;
+    }
+
+
+    .navi {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    .barrita {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        color: #333;
+        font-size: 16px;
+    }
+
+    .inputi {
+        width: 500px;
+        cursor: text;
+    }
+
+    li {
+        padding: 10px;
+
+    }
+
+    .headertext {
+        width: 100%;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+input, textarea {
+    border-radius:5px;
+}
+
